@@ -1,0 +1,15 @@
+# --- FRONTEND (React) ---
+# Mark React build + source as vendor (ignored in language stats)
+frontend/* linguist-vendored
+
+# Ignore node_modules completely
+frontend/node_modules/* linguist-vendored
+
+# Override language for safety
+backend/* linguist-language=Python
+
+# --- Optional: Ignore generated files ---
+*.min.js linguist-generated=true
+*.map    linguist-generated=true
+build/*  linguist-generated=true
+dist/*   linguist-generated=true
